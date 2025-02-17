@@ -1,0 +1,306 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+	overflow-x: hidden !important;
+}
+
+:root {
+  --theme-gradient: linear-gradient(to top right, #ffaf0c, #FF2600);
+  --theme-color: #ffba2d;
+  --theme-color-secondary: #FF2600;
+}
+
+#home-bg {
+	background-image: url(https://codestar.xyz/demo/pizza/burger/image/home-bg.jpg);
+	padding-top: 150px;
+}
+
+#home-bg, #facts-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#facts-bg {
+	background-image: url(https://codestar.xyz/demo/pizza/burger/image/facts-bg.jpg);
+}
+
+#btn-nav {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none;
+}
+
+.nav-link {
+	transition: color 0.5s ease;
+	color: black;
+}
+
+.nav-link:hover {
+  color: var(--theme-color) !important;
+}
+
+#logo-parent {
+	max-width: fit-content;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.bg-gradient {
+	background: var(--theme-gradient) !important;
+}
+
+.bg-theme {
+	background: var(--theme-color);
+}
+
+.bg-theme-secondary {
+	background: var(--theme-color-secondary);
+}
+
+.border-theme-secondary {
+	border: 1px solid var(--theme-color-secondary);
+}
+
+.text-theme-secondary {
+	color: var(--theme-color-secondary);
+}
+
+#home a {
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+#explain, #features, #share, #pricing, #review, #blog, #contact {
+	margin-bottom: 100px;
+}
+
+#explain {
+	margin-top: 100px;
+}
+
+.card p {
+	line-height: 30px;
+}
+
+.card {
+	transition: all 0.5s ease;
+	border: 0;
+	box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+	transform: scale(1.02) translateY(-10px);
+}
+
+#facts-bg .container {
+	margin-top: 100px;
+	padding: 100px 0;
+}
+
+#facts-parent {
+	max-width: 400px;
+}
+
+#share div:first-child {
+	max-width: 850px;
+	margin: auto;
+}
+
+#share h1 {
+	word-spacing: 7px;
+	font-weight: bolder;
+	letter-spacing: 5px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#video-bg {
+	background: url(https://codestar.xyz/demo/pizza/burger/image/video-bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 1200px;
+	padding: 50px 10px;
+	margin: auto;
+	text-align: center;
+}
+
+#video-bg img {
+	height: 60px;
+}
+
+
+
+.card.pricing {
+	width: 330px;
+	max-width: 330px;
+	height: 600px;
+	padding: 0 !important;
+}
+
+.card.pricing button {
+	border: none;
+	outline: none;
+}
+
+
+
+
+#review-bg {
+	background: url(https://codestar.xyz/demo/pizza/burger/image/screen.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+#review div {
+	color: white;
+}
+
+
+
+.testimonial-img {
+	border-radius: 100%;
+	height: 80px;
+}
+
+
+.testimonials-slider {
+	max-width: 350px;
+}
+
+.testimonial-p {
+	text-align: justify;
+	margin-top: 20px;
+	
+}
+
+
+
+.review-parent {
+	padding: 60px 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.review-img {
+	max-width: 100%;
+	border-radius: 10px;
+}
+
+
+.nav-swiper {
+	outline: 0;
+	border: 0;
+	color: white;
+	font-size: 25px;
+	background: var(--theme-gradient);
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+	margin-top: 35px;
+}
+
+
+.card.blog {
+	max-width: 300px;
+	height: 400px;
+	transform: none;
+}
+
+.card.blog img {
+	transition: opacity .5s ease;
+}
+
+.card.blog h3 {
+	transition: color .5s ease;
+}
+
+.card.blog:hover img {
+	opacity: .9;
+}
+
+.card.blog:hover h3 {
+	color: var(--theme-color-secondary);
+}
+
+.contact-info {
+	width: 300px;
+}
+
+
+form input, form textarea {
+	outline: none !important;
+	border: none !important;
+	resize: none;
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,.1);
+	padding: 10px 15px;
+}
+
+.form-control:focus {
+	box-shadow: 0px 0px 10px 3px rgba(0,0,0,.1);
+}
+
+
+form button {
+	outline: none;
+	border: none;
+}
+
+.footer-item {
+	width: 300px;
+}
+
+
+#loader {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+	.hero-header {
+		font-size: 50px;
+	}
+	#video-bg {
+		padding: 100px 20px;
+		text-align: left;
+	}
+}
+
+
+
+@media (min-width: 992px) {
+	.review-parent {
+	  width: 50%;
+		height: 600px;
+	}
+}
